@@ -1,0 +1,56 @@
+按照页面加载顺序：
+nav：
+    描述: 导航栏信息，用户登录信息，钱包信息
+    JSON: {
+          	"code": 0,
+          	"message": "0",
+          	"ttl": 1,
+          	"data": {
+          		"isLogin": true,
+          		"email_verified": 1,
+          		"face": "http://i2.hdslb.com/bfs/face/36f6c927bd7e128e55d85b0a94732b3dfb3d7b96.jpg",
+          		"level_info": {
+          			"current_level": 5,
+          			"current_min": 10800,
+          			"current_exp": 13018,
+          			"next_exp": 28800
+          		},
+          		"mid": 36033035,
+          		"mobile_verified": 1,
+          		"money": 827.4,
+          		"moral": 70,
+          		"official": {
+          			"role": 0,
+          			"title": "",
+          			"desc": "",
+          			"type": -1
+          		},
+          		"officialVerify": {
+          			"type": -1,
+          			"desc": ""
+          		},
+          		"pendant": {
+          			"pid": 0,
+          			"name": "",
+          			"image": "",
+          			"expire": 0
+          		},
+          		"scores": 0,
+          		"uname": "蕉香蕉",
+          		"vipDueDate": 1618502400000,
+          		"vipStatus": 1,
+          		"vipType": 2,
+          		"vip_pay_type": 0,
+          		"vip_theme_type": 0,
+          		"wallet": {
+          			"mid": 36033035,
+          			"bcoin_balance": 0,
+          			"coupon_balance": 0,
+          			"coupon_due_time": 0
+          		},
+          		"has_shop": false,
+          		"shop_url": "",
+          		"allowance_count": 0,
+          		"answer_status": 0
+          	}
+          }

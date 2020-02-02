@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>top.dustone</groupId>
+    <artifactId>cilicili</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+        <repositories><!-- 代码库 -->
+            <repository>
+                <id>maven-ali</id>
+                <url>http://maven.aliyun.com/nexus/content/groups/public//</url>
+                <releases>
+                    <enabled>true</enabled>
+                </releases>
+                <snapshots>
+                    <enabled>true</enabled>
+                    <updatePolicy>always</updatePolicy>
+                    <checksumPolicy>fail</checksumPolicy>
+                </snapshots>
+            </repository>
+        </repositories>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.jvnet.winp/winp -->
+        <dependency>
+            <groupId>org.jvnet.winp</groupId>
+            <artifactId>winp</artifactId>
+            <version>1.28</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.webfolder/cdp4j -->
+        <dependency>
+            <groupId>io.webfolder</groupId>
+            <artifactId>cdp4j</artifactId>
+            <version>3.0.15</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.62</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-core</artifactId>
+            <version>5.0.7</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-setting</artifactId>
+            <version>5.0.7</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.freemarker/freemarker -->
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+            <version>2.3.29</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-web-client</artifactId>
+            <version>3.5.4</version>
+        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>io.webfolder</groupId>  &lt;!&ndash;自定义&ndash;&gt;-->
+        <!--            <artifactId>cdp4j</artifactId>    &lt;!&ndash;自定义&ndash;&gt;-->
+        <!--            <version>4.2.0</version> &lt;!&ndash;自定义&ndash;&gt;-->
+        <!--            <scope>system</scope> &lt;!&ndash;system，类似provided，需要显式提供依赖的jar以后，Maven就不会在Repository中查找它&ndash;&gt;-->
+        <!--            <systemPath>${basedir}/lib/cdp4j-4.2.0.jar</systemPath> &lt;!&ndash;项目根目录下的lib文件夹下&ndash;&gt;-->
+        <!--        </dependency>-->
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
