@@ -1,16 +1,11 @@
 package top.dustone.cilicili.bean;
 
+import java.util.Map;
+
 public class RuntimeParams {
-    private String cookies;
+    private Map<String, String> baseRequestHeaders;
+    private String uid;
     private String dynamicType;
-
-    public String getCookies() {
-        return cookies;
-    }
-
-    public void setCookies(String cookies) {
-        this.cookies = cookies;
-    }
 
     public String getDynamicType() {
         return dynamicType;
@@ -18,5 +13,21 @@ public class RuntimeParams {
 
     public void setDynamicType(String dynamicType) {
         this.dynamicType = dynamicType;
+    }
+
+    public Map<String, String> getBaseRequestHeaders() {
+        return baseRequestHeaders;
+    }
+
+    public void setBaseRequestHeaders(Map<String, String> baseRequestHeaders) {
+        this.baseRequestHeaders = baseRequestHeaders;
+    }
+
+    public String getUid() {
+        return uid;
+    }
+
+    public void setUid(String uid) {
+        this.uid = uid;
     }
 }
